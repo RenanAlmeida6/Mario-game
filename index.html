@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="./js/script.js" defer></script>
+  <title>Mario Jump</title>
+</head>
+
+<body>
+  <div class="game-board">
+    <div class="divMenu">
+      <h1 class="start">Start Game</h1>
+      <input class="iconStart" type="image" src="./Imagens/StartIcon.png" onclick="Start()">
+    </div>
+
+    <div class="divOpcoes">
+      <label>Musica</label>
+      <label>Sons</label>
+    </div>
+
+    <div class="divStartPlacar">
+      <Label class="placar">0</Label>
+      <img src="./Imagens/clouds.png" class="clouds">
+    </div>
+    <img src="./Imagens//mario.gif" class="mario">
+    <img src="./Imagens/pipe.png" class="pipe">
+    <div class="divGameOver">
+      <h1 class="game-over-message">Game Over</h1>
+      <input class="reload" type="image" src="./Imagens/Reload.png" onclick="Reload()">
+    </div>
+    <div id="song">
+    </div>
+    <audio id="DieSong" autoplay>
+      <source src="./Musics/player-died.mp3">
+    </audio>
+  </div>
+  <audio id="Musica-Fundo" autoplay>
+    <source  src="./Musics/Musica-Fundo.mp3" type="audio/mpeg">
+  </audio>
+</body>
+
+</html>
